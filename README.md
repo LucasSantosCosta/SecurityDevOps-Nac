@@ -1,10 +1,12 @@
 # SecurityDevOps-Nac
 
-Após download/clone do projeto, acessar a pasta fiap-devops/nac_docker e usar o arquivo Dockerimage para criar a imagem:
+O primeiro passo é realizar o download/git clone do projeto.
+
+Logo em seguida acessar a pasta SecurityDevOps-Nac e usar o arquivo Dockerfile para criar a imagem.
 
 $ docker build -t <minha-imagem> .
 
-Concluída a criação, rodar a imagem mapeando a porta 3000 do container para uma porta específica do host:
+Para concluir a criação, deve-se rodar a imagem mapeando a porta 3000 do container para uma porta específica do host:
 
 $ docker run --rm --name <meu-container> -p <porta_do_host>:3000 <minha-imagem>
 
